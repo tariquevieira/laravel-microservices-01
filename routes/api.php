@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\CategoryController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\Api\CompanyController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -9,3 +9,4 @@ Route::get('/', function () {
 });
 
 Route::apiResource('categories', CategoryController::class);
+Route::apiResource('companies', CompanyController::class);
